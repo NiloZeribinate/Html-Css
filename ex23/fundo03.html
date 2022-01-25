@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando fundos 03</title>
+    <style>
+        div.quadrado{
+            height: 200px;
+            max-width: 1000px;
+            margin-bottom: 50px;
+            border: 2px dashed black;
+            background-image: url("imagens/wallpaper003.jpg");
+            background-repeat: no-repeat;
+        }
+
+        div#q01{
+            background-position: left top;
+        }
+
+        div#q02{
+            background-position: right bottom;
+        }
+
+        div#q03{
+            background-position: left center;
+        }
+
+        div#q04{
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>left top</h2>
+    <div class="quadrado" id="q01"></div>
+
+    <h2>right bottom</h2>
+    <div class="quadrado" id="q02"></div>
+
+    <h2>left center</h2>
+    <div class="quadrado" id="q03"></div>
+
+    <h2>center</h2>
+    <div class="quadrado" id="q04"></div>
+</body>
+</html>
