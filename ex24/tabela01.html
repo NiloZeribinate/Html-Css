@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de tabelas 01</title>
+    <style>
+        :root{
+            --tam-borda: 2px;
+        }
+
+        table{
+            background-color: turquoise;
+            border-collapse: collapse;
+            width: 400px;
+            height: 200px;
+        }
+
+        tr#guia > td{
+            text-align: center;
+            font-weight: bold;
+        }
+
+        tr#guia > th{
+            background-color: royalblue;
+        }
+
+        th{
+            border: var(--tam-borda) solid royalblue;
+        }
+
+        th#a{
+            vertical-align: bottom;
+        }
+
+        th#b{
+            vertical-align: middle;
+        }
+
+        th#c{
+            vertical-align: top;
+        }
+
+        td{
+            border: var(--tam-borda) solid royalblue;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela
+            TABLE ROW = linha da tabela
+                TABLE HEADER = cabeçalho da tabela
+                TABLE DATA   = dado de tabela
+    -->
+    <h1>Minha Primeira Tabela</h1>
+
+    <table>
+        <tr id="guia">
+            <th></th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <th id="a">A</th>
+
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+
+        <tr>
+            <th id="b">B</th>
+
+            <td>A2</td>
+            <td>B2</td>
+            <td>C3</td>
+        </tr>
+
+        <tr>
+            <th id="c">C</th>
+
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+    </table>
+</body>
+</html>
