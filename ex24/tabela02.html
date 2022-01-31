@@ -5,10 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio de tabelas 02</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption{
+            background-color: #acacac;
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        thead  th, tfoot  th, tfoot td{
+            background-color: #535353;
+            color: white;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.05em;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        table tr:hover{
+            font-size: 1.25em;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <!--
         TABLE
+            CAPTION
             THEAD
                 TR, TH, TD
             TBODY
@@ -17,10 +52,11 @@
                 TR, TH, TD
     -->
     <table>
+        <caption>Polulação das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
@@ -163,7 +199,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
