@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio tabela 05</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        caption{
+            border: 1px solid black;
+            border-bottom: 0px;
+            padding: 5px;
+        }
+        
+        caption > strong{
+            color: dodgerblue;
+        }
+
+        th, td{
+            padding: 5px 10px;
+            text-align: center;
+            border: black solid 1px;
+        }
+
+        col.colunas{
+            background-color: darkolivegreen;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Aprendendo a usar <strong>&lt;colgroup&gt;</strong></caption>
+        <colgroup>
+            <col class="nome">
+            <col class="colunas" span="3">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            
+            <tr>
+                <td>Nilo Zeribinate</td>
+                <td>M</td>
+                <td>14</td>
+                <td>Programador</td>
+            </tr>
+            
+            <tr>
+                <td>Claudio de Souza</td>
+                <td>M</td>
+                <td>35</td>
+                <td>Frentista</td>
+            </tr>
+            
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td>Professor</td>
+            </tr>
+            
+            <tr>
+                <td>Rafael</td>
+                <td>M</td>
+                <td>23</td>
+                <td>Biologo</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
